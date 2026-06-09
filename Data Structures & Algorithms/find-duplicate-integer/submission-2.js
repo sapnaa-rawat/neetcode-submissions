@@ -1,0 +1,21 @@
+class Solution {
+    /**
+     * @param {number[]} nums
+     * @return {number}
+     */
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {boolean}
+ */
+findDuplicate(nums) {
+    let set = new Set;
+    for(let i=0;i<nums.length;i++){
+        if(set.has(nums[i])){
+            return nums[i]
+        }
+        set.add(nums[i])     
+    }
+    return -1
+}
+}
